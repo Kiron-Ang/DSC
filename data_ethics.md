@@ -1,4 +1,8 @@
-KIRON ANG, NOVEMBER 2024, DSC 3344, DATA ETHICS PROJECT
+# Data Ethics Example Gathering
+
+Kiron Ang
+
+November 2024
 
 Below are some recent real-world examples of statistics that lie:
 
