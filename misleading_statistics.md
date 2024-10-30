@@ -1,10 +1,8 @@
-# Data Ethics Example Gathering
+# Misleading Statistics
+### Kiron Ang, November 2024
 
-Kiron Ang
-
-November 2024
-
-Below are some recent real-world examples of statistics that lie:
+I recently read Darrell Huff's 1954 book *How to Lie with Statistics*. 
+Below are some misleading statistics from recent news articles:
 
 1. An example of Chapter 1's "The Sample with the Built-in Bias"
 
