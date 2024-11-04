@@ -1,0 +1,91 @@
+Misleading Statistics
+Kiron Ang, November 2024
+
+I recently read Darrell Huff's 1954 book *How to Lie with Statistics*.
+The book illustrated the many ways that data can be misrepresented and
+misleading to deceive the general populace. I've located some examples
+of how people today may still fall prey to data-related fallacies.
+Below are some misleading statistics from recent news articles:
+
+1. An example of why you should use comparisons to a common baseline:
+
+----------------------------------------------------------------------
+https://www.foxnews.com/politics/trump-camp-confident-based-early-
+voting-black-leaders-say-harris-struggling
+
+The view from the Trump camp is that registration figures favor 
+Republicans, based on mail-in voting, in the battleground states that 
+will decide the race. Nearly half the country has already voted. Take 
+the crucial commonwealth of Pennsylvania. In 2020, Democrats had a 
+7.5% advantage, and that’s now shrunk to a 3-point edge. What’s more, 
+just 39% of Democrats who have voted there so far are men, compared to
+49% among Republicans. Democratic strategist Tom Bonier, who appears
+on MSNBC, says the Pennsylvania electorate is much more Republican, 
+and much more male, than last time.
+----------------------------------------------------------------------
+
+Although it seems here that the Democrats are losing in Pennsylvania, 
+we are not given any details on how many people out of the total 
+population have voted. The first figure, "nearly half of the country
+has already voted,"only applies to the entire nation, and it is 
+unclear if half of the people in Pennsylvania also voted already. This
+article pulls in many percentages, without ever giving insight into 
+population counts of people that are likely to vote by November 5. 
+Therefore, it is very difficult to compare "39% of Democrats" and "49%
+of Republicans", since we have no clue if the first category contains
+1,000 people in total, while the latter may only include 100.
+
+2. An example of why you should check which average is used:
+
+----------------------------------------------------------------------
+https://www.theatlantic.com/culture/archive/2024/11/baseball-climate-
+change-tropicana-field/680510
+
+The problem, of course, is the weather. Of America’s four major
+professional sports, baseball is uniquely vulnerable to climate change
+in that it is typically played outside, often during the day, for a
+long, unrelenting season: six games a week per team, from March to 
+October, which incidentally is when the Northern Hemisphere gets 
+steamy and unpredictable, more so every year. In 1869, when the first
+professional baseball club was formed, the average July temperature in
+New York City’s Central Park was 72.8 degrees. In 2023, it was 79. By
+2100, it could be as much as 13.5 degrees hotter, according to recent
+projections, hot enough to make sitting in the sunshine for a few
+hours unpleasant at best and hazardous at worst. In June, four Kansas
+City Royals fans were hospitalized for heat illness during an
+afternoon home game. On a muggy day four seasons ago, Los Angeles
+Angels starting pitcher Dylan Bundy began sweating so much, you could
+see it on TV. He then took a dainty puke behind the mound and exited
+the game with heat exhaustion.
+----------------------------------------------------------------------
+
+The argument here is that baseball is "uniquely vulnerable to climate
+change". However, what is meant by "the average July temperature"? Did
+they look at historical data for July 1869, add up all 31 daily
+temperatures and then divide by 31? Or did they obtain a median,
+rather than an arithmetic mean? Furthermore, did they look at peak
+temperatures, or did they also average the temperatures collected at
+various points during the day? This is an incredible weakness in the
+argument here, because it is unclear to readers what those numbers
+even mean, and the only thing we can understand is that they are
+increasing over time. However, it is unclear if that will make it
+impossible to play baseball; if not all of the days are hot at all
+times, then couldn't baseball games be moved to cooler times on 
+cooler days?
+
+3. 
+
+----------------------------------------------------------------------
+https://www.vox.com/future-perfect/381551/starbucks-dropping-plant-
+milk-upcharge-vegan-tax
+
+According to Switch4Good, a nonprofit that advocates for shifting away
+from dairy and has long agitated against the plant milk surcharge, it
+costs Starbucks between 9 and 28 cents extra to make a drink with soy,
+almond, or oat milk. That means the extra 70- to 80-cent charge could
+amount to a markup of more than 700 percent, depending on the milk
+alternative. A Starbucks spokesperson told Vox that the decision to
+drop the surcharge was made to benefit customers but didn’t answer
+questions about Switch4Good’s analysis.
+----------------------------------------------------------------------
+
