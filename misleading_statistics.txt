@@ -10,8 +10,11 @@ Below are some misleading statistics from recent news articles:
 1. An example of why you should use comparisons to a common baseline:
 
 ----------------------------------------------------------------------
+Excerpt taken from an article published on Nov. 4, 2024:
+
 https://www.foxnews.com/politics/trump-camp-confident-based-early-
 voting-black-leaders-say-harris-struggling
+
 
 The view from the Trump camp is that registration figures favor 
 Republicans, based on mail-in voting, in the battleground states that 
@@ -27,7 +30,7 @@ and much more male, than last time.
 Although it seems here that the Democrats are losing in Pennsylvania, 
 we are not given any details on how many people out of the total 
 population have voted. The first figure, "nearly half of the country
-has already voted,"only applies to the entire nation, and it is 
+has already voted," only applies to the entire nation, and it is 
 unclear if half of the people in Pennsylvania also voted already. This
 article pulls in many percentages, without ever giving insight into 
 population counts of people that are likely to vote by November 5. 
@@ -38,6 +41,8 @@ of Republicans", since we have no clue if the first category contains
 2. An example of why you should check which average is used:
 
 ----------------------------------------------------------------------
+Execerpt taken from an article published on Nov. 2, 2024:
+
 https://www.theatlantic.com/culture/archive/2024/11/baseball-climate-
 change-tropicana-field/680510
 
@@ -73,9 +78,12 @@ impossible to play baseball; if not all of the days are hot at all
 times, then couldn't baseball games be moved to cooler times on 
 cooler days?
 
-3. 
+3. An example of why you should always be wary of “big names” on
+   studies and scrutinize authority:
 
 ----------------------------------------------------------------------
+Execerpt taken from an article published on Nov. 2, 2024:
+
 https://www.vox.com/future-perfect/381551/starbucks-dropping-plant-
 milk-upcharge-vegan-tax
 
@@ -88,4 +96,16 @@ alternative. A Starbucks spokesperson told Vox that the decision to
 drop the surcharge was made to benefit customers but didn’t answer
 questions about Switch4Good’s analysis.
 ----------------------------------------------------------------------
+
+This is incredibly vague. A range of 9 to 28 cents is already 
+questionable, and considering that there are three possible types of
+milk that may be responsible, it is difficult to make a solid claim 
+without looking at the data ourselves. Even though the main point is
+simply to say that using plant milk is generally more expensive, this
+raises questions about the analysis performed by "Switch4Good".
+Admittedly, this could be an attempt by the author to summarize the
+original findings, but even that is still disappointing because there
+is no explanation in any part of the full article regarding what 
+exactly causes plant milk to be more expensive.
+
 
