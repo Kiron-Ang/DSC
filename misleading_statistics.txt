@@ -108,15 +108,39 @@ original findings, but even that is still disappointing because there
 is no explanation in any part of the full article regarding what 
 exactly causes plant milk to be more expensive.
 
-4.
+4. An example of why you should look at all the numbers that describe
+   a dataset.
 
 ----------------------------------------------------------------------
 Excerpt from an article published on November 3, 2024:
 
 https://www.bbc.com/news/articles/cz0mlrx0jxno
 
+Ms Bolthouse also cites the fact that households in Virginia and 
+neighbouring Maryland are being expected to help pay for the 
+electricity network upgrades that the data centres require.
 
+She and fellow campaigners are fighting back. “We’re working directly
+on the ground, opposing each data centre application and working on
+the local zoning, and trying to educate our local planning
+commission and supervisors about the issues that we see. But we're
+also working at the state level.”
+
+Similar campaigns against data centres are springing up all over the
+world, including in the Republic of Ireland, where such facilities
+use 21% of the country’s electricity.
+
+"Our main objections to data centres revolve around their potential
+negative impacts on our climate, their sustainability, and local
+infrastructure," says Tony Lowes of Friends of the Irish Environment.
+"When data centres rely on fossil fuel, they potentially strain the
+electricity grid and can undermine national renewable energy
+commitments."
 ----------------------------------------------------------------------
+
+I confess that I hate criticizing environmentalists because their
+struggle is difficult enough, but it is impossible to understand what
+is happening in Ireland without more information.
 
 5. 
 
