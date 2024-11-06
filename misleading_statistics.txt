@@ -1,11 +1,13 @@
-Misleading Statistics
+Potentially Misleading Statistics
 Kiron Ang, November 2024
 
 I recently read Darrell Huff's 1954 book *How to Lie with Statistics*.
 The book illustrated the many ways that data can be misrepresented and
-misleading to deceive the general populace. I've located some examples
-of how people today may still fall prey to data-related fallacies.
-Below are some misleading statistics from recent news articles:
+misleading to deceive the general populace. I've located some
+potentially misleading statistics from recent online news articles.
+Although I did not conduct extensive investigations to confirm
+the validity of these statistics, I simply point out where the 
+omission of information can pose a problem to clear understanding:
 
 1. An example of why you should use comparisons to a common baseline:
 
@@ -185,4 +187,3 @@ based on the information in the article, it seems that Rwanda has done
 remarkably well overall, but there are still small nuances to always
 consider with epidemiological updates, especially since we are all
 quite wary after the recent global pandemic.
-
