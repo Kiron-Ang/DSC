@@ -140,9 +140,20 @@ commitments."
 
 I confess that I hate criticizing environmentalists because their
 struggle is difficult enough, but it is impossible to understand what
-is happening in Ireland without more information.
+is happening in Ireland without more information. When it comes to all
+of the things that use electricity in Ireland, what percentage of
+electricity do other kinds of facilities consume? Are manufacturing
+companies that make solar panels consuming 40% of electricity?
+Furthermore, are they using any kind of data in their workflow, 
+therefore adding to that "21%" figure? How many people are being
+serviced by data centers to begin with? Perhaps the consumption
+is worth it relative to the value the data centers bring. There are
+a lot of other numbers that would be great to see before making a 
+holistic conclusion, especially the median consumption of data
+centers; perhaps some data centers are particularly inefficient than 
+others! 
 
-5. 
+5. An example of why you should be aware of bias in sample selection:
 
 ----------------------------------------------------------------------
 Excerpt from an article published on November 1, 2024:
@@ -150,4 +161,28 @@ Excerpt from an article published on November 1, 2024:
 https://www.npr.org/sections/goats-and-soda/2024/11/01/g-s1-30948/
 virus-marburg-outbreak-rwanda-unprecedented-success
 
+The number of new cases in Rwanda has also dwindled dramatically, from
+several a day to just 4 reported in the last two weeks, bringing the
+total for this outbreak to 66 Marburg patients and 15 deaths.
+
+“It's not yet time to declare victory, but we think we are headed in a
+good direction,” says Butera. Public health experts are already using
+words like “remarkable,” “unprecedented” and “very, very encouraging”
+to characterize the response.
+
+How did Rwanda — an African country of some 14 million — achieve this
+success? And what can other countries learn from Rwanda’s response?
+----------------------------------------------------------------------
+
+The article as a whole praises Rwanda for having such a low fatality
+rate, and it seems rightfully so. The main thing to keep in mind
+is that these are simply patients that have shown up at a medical
+facility. It is unclear how the disease outbreak first started,
+but there may have been more deaths from people that are not reported
+to have Marburg virus. Rural people who have the disease may have
+a higher fatality rate with less access to healthcare. Generally,
+based on the information in the article, it seems that Rwanda has done
+remarkably well overall, but there are still small nuances to always
+consider with epidemiological updates, especially since we are all
+quite wary after the recent global pandemic.
 
