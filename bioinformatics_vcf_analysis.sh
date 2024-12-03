@@ -57,12 +57,17 @@ rs5888	rs4765181	rs4238001	rs701106	rs10846748	rs3924313"
 
 header=$(grep -m 1 '^#CHROM' all.vcf)
 
+count=0
+
 for label in $header; do
   for id in $puerto_rican_ids; do
     if [[ "$label" == "$id" ]]; then
       echo "$label"
+      ((count++))
     fi
   done
 done
+
+echo Number of matches: $counter
 
 echo SCRIPT END
