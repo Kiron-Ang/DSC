@@ -11,6 +11,9 @@ Please ensure that to start off, you have the 1000 genomes phase 3
 release VCF file in the same directory as this script. Ensure that the 
 VCF file is named "all.vcf".
 
+You can use the curl command below to get the zipped VCF file. Make
+sure to unzip it. It's appoximately 1.2 GB zipped, and 20 GB unzipped.
+
 curl -o all.vcf.gz \
     ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/hd_genotype_chip/ \
     ALL.chip.omni_broad_sanger_combined.20140818.snps.genotypes.vcf.gz
@@ -55,15 +58,11 @@ rs5888	rs4765181	rs4238001	rs701106	rs10846748	rs3924313"
 header=$(grep -m 1 '^#CHROM' all.vcf)
 
 for label in $header; do
-  echo "$label"
-done
-
-for id in $puerto_rican_ids; do
-  echo "$id"
-done 
-
-for number in $rs_numbers; do
-  echo "$number"
+  for id in $puerto_rican_ids; do
+    if [[ "$label" == "$id" ]]; then
+      echo "$label"
+    fi
+  done
 done
 
 echo SCRIPT END
