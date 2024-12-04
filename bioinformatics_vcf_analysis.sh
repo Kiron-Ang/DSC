@@ -24,6 +24,9 @@ information in the paper below to see the SNPS chosen here:
 
 https://doi.org/10.1186/1471-2156-10-45
 
+There are 2327 columns in total. 9 are used for variant information.
+100 columns correspond to Puerto Rican ID's.
+
 COMMENT
 
 puerto_rican_ids="HG00554 HG00733	HG00738	HG00555	HG01243	HG01248	HG01286	HG01301	HG00637
@@ -55,19 +58,20 @@ rs1284300	rs1052700	rs894160	rs2289487	rs1800206	rs135549	rs3856806	rs10865710
 rs12497191	rs1801282	rs4235308	rs2946385	rs2970869	rs3736265	rs4697046	rs3774923
 rs5888	rs4765181	rs4238001	rs701106	rs10846748	rs3924313"
 
+grep -m 1 '^#CHROM' all.vcf
 header=$(grep -m 1 '^#CHROM' all.vcf)
 
-count=0
-
 for label in $header; do
+  ((num_col++))
   for id in $puerto_rican_ids; do
     if [[ "$label" == "$id" ]]; then
       echo "$label"
-      ((count++))
+      ((num_match++))
     fi
   done
 done
 
-echo Number of matches: $counter
+echo Number of columns: $num_col
+echo Number of matches: $num_match
 
 echo SCRIPT END
