@@ -58,14 +58,13 @@ rs1284300	rs1052700	rs894160	rs2289487	rs1800206	rs135549	rs3856806	rs10865710
 rs12497191	rs1801282	rs4235308	rs2946385	rs2970869	rs3736265	rs4697046	rs3774923
 rs5888	rs4765181	rs4238001	rs701106	rs10846748	rs3924313"
 
-grep -m 1 '^#CHROM' all.vcf
 header=$(grep -m 1 '^#CHROM' all.vcf)
 
 for label in $header; do
   ((num_col++))
   for id in $puerto_rican_ids; do
     if [[ "$label" == "$id" ]]; then
-      echo "$label"
+      kept_col="$kept_col $num_col"
       ((num_match++))
     fi
   done
@@ -73,5 +72,12 @@ done
 
 echo Number of columns: $num_col
 echo Number of matches: $num_match
+echo Kept Columns: $kept_col
+
+for col in $kept_col; do
+  ((num_kept_col++))
+done
+
+echo $num_kept_col
 
 echo SCRIPT END
