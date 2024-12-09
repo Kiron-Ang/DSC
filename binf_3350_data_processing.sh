@@ -1,6 +1,4 @@
-#!/bin/bash
-
-vcf="all.vcf"
+echo "SCRIPT START"
 
 rs_numbers="rs2230806 rs2297404 rs4149272 rs2575875 rs363717 rs4148189 rs3806471
 rs6720173 rs4131229 rs4148211 rs4148217 rs11887534 rs6709904 rs11216158 rs670
@@ -27,60 +25,5 @@ HG01054 HG01061 HG01066 HG01164 HG01073 HG01169 HG01080 HG01171 HG01085 HG01176 
 HG01097 HG01188 HG01249 HG01190 HG01195 HG00642 HG01311 HG01323 HG01327 HG00639 HG00641 HG01396 
 HG01168 HG01170 HG01175 HG01182 HG01187 HG01199 HG01062 HG01067 HG01074 HG01079 HG01081 HG01086 
 HG01098 HG01101 HG01106 HG01404 HG01411"
-
-declare -A rs_set
-for rs in $rs_numbers; do
-  rs_set[$rs]=1
-done
-
-declare -A puerto_rican_ids_set
-for id in $puerto_rican_ids; do
-  puerto_rican_ids_set[$id]=1
-done
-
-header=$(grep -m 1 '^#CHROM' "$vcf")
-
-pr_col="1,2,3,4,5,6,7,8,9"
-other_col=""
-seen_columns=()  
-
-awk -v puerto_rican_ids_set="${!puerto_rican_ids_set[*]}" -v rs_set="${rs_numbers// /|}" -v header="$header" '
-BEGIN {
-    split(puerto_rican_ids_set, pr_ids, " ")
-    split(rs_set, rs_numbers, "|")
-    for (i in pr_ids) puerto_rican_ids_set[pr_ids[i]] = 1
-    for (i in rs_numbers) rs_set[rs_numbers[i]] = 1
-}
-NR == 1 {
-    print header > "header.txt"  # Write the header to a file
-    next
-}
-{
-    match_found = 0
-    for (i = 10; i <= NF; i++) {  # Loop through sample columns starting from 10
-        if ($i in puerto_rican_ids_set) {
-            pr_col = pr_col "," i
-            match_found = 1
-        } else if ($i in rs_set) {
-            kept_row = kept_row NR
-        } else {
-            other_col = other_col "," i
-        }
-    }
-    if (match_found) {
-        pr_col = pr_col "," NR
-    }
-    if (kept_row) {
-        kept_row = kept_row "," NR
-    }
-}
-END {
-    print pr_col > "pr.vcf"
-    print other_col > "not_pr.vcf"
-}
-' "$vcf" > small.vcf
-
-cut -f "$pr_col" small.vcf > pr.vcf
-cut -f "$other_col" small.vcf > not_pr.vcf
 
 echo "SCRIPT END"
