@@ -1,5 +1,9 @@
 echo "SCRIPT START"
 
+curl -v --output all.vcf.gz ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/hd_genotype_chip/ALL.chip.omni_broad_sanger_combined.20140818.snps.genotypes.vcf.gz
+
+gunzip all.vcf.gz
+
 rs_numbers="rs2230806 rs2297404 rs4149272 rs2575875 rs363717 rs4148189 rs3806471
 rs6720173 rs4131229 rs4148211 rs4148217 rs11887534 rs6709904 rs11216158 rs670
 rs2727784 rs613808 rs5082 rs1263177 rs5104 rs675 rs5092 rs5110 rs662799 rs3135506
