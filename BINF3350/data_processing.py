@@ -48,6 +48,7 @@ sample_names = [
 ]
 
 # 5. Create a smaller VCF file by only keeping rows in the original VCF that correspond to one of the 101 RS numbers
+"""
 input = open("all.vcf", "r")
 output = open("small.vcf", "w")
 
@@ -65,3 +66,46 @@ while rs_numbers:
 
 input.close()
 output.close()
+"""
+
+# 6. Create two VCF files by separating Puerto Ricans from non-Puerto Ricans using the sample names
+input = open("small.vcf", "r")
+output_one = open("puerto_ricans.vcf", "w")
+output_two = open("others.vcf", "w")
+
+print("Creating puerto_ricans.vcf and others.vcf. . .")
+
+lines = input.readlines()
+
+header = lines[0].strip().split("\t")
+
+puerto_ricans = []
+others = []
+
+for value in header[9:]:
+  if value in sample_names:
+    puerto_ricans.append(header.index(value))
+  else:
+    others.append(header.index(value))
+
+for line in lines:
+
+  line = line.strip().split("\t")
+
+  output_one.write("\t".join(line[0:9]))
+  output_one.write("\t")
+  
+  output_two.write("\t".join(line[0:9]))
+  output_two.write("\t")
+
+  temp = [line[i] for i in puerto_ricans]
+  output_one.write("\t".join(temp))
+  output_one.write("\n")
+
+  temp = [line[i] for i in others]
+  output_two.write("\t".join(temp))
+  output_two.write("\n")
+
+input.close()
+output_one.close()
+output_two.close()
