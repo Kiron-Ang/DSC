@@ -51,11 +51,17 @@ sample_names = [
 input = open("all.vcf", "r")
 output = open("small.vcf", "w")
 
+print("Creating small.vcf. . .")
+
 while rs_numbers:
   vcf_line = next(input).split("\t")
-  if vcf_line[0] == "#CHROM":
+  if vcf_line[0].isdigit():
+    if vcf_line[2] in rs_numbers:
+      print(vcf_line[2])
+      rs_numbers.remove(vcf_line[2])
+      output.write("\t".join(vcf_line))
+  elif vcf_line[0] == "#CHROM":
     output.write("\t".join(vcf_line))
-    break
 
 input.close()
 output.close()
